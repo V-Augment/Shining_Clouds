@@ -38,7 +38,7 @@
                   ar>
     </model-viewer>
     
-    
+     <button onclick="myfunction()">Click me</button>
   </div>
   
   
@@ -56,6 +56,12 @@
   <script nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   </script>
+	
+	<script>
+  function myfunction(){
+ console.log(modelViewer.arStatus);
+ }
+	</script>
   
   <script>
         (() => {

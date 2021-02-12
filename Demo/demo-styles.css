@@ -1,0 +1,121 @@
+body {
+  margin: 1em;
+  padding: 0;
+  font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
+  color: #244376;
+}
+
+
+#card {
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+model-viewer {
+  width: 100%;
+  height: 660px;
+  background-color: #70BCD1;
+  --poster-color: #ffffff00;
+}
+.hero {
+  background-image: url("http://richardmiddleton.me/modal-hero.jpg");
+  background-size: cover;
+  height: 420px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: #1686d9;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 28px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+   position: absolute;
+  left: 20px;
+  top: 590px;
+ 
+}
+.button:hover {
+  background-color: white;
+  color: #1686d9;
+  border: 2px solid #1686d9;
+}
+
+.modal-contents {
+  background-image: url("https://cdn.glitch.com/8bad130d-3617-4954-8f5a-8f85f52c9d52%2FInfoImage.jpeg?v=1613098491050");
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.bg-modal {
+  
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.attribution h1 {
+  margin: 0 0 0.25em;
+}
+
+.attribution img {
+  opacity: 0.5;
+  height: 2em;
+}
+
+.attribution .cc {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.close:hover {
+  color: #666;
+}
